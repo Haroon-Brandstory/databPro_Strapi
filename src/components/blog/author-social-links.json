@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_blog_author_social_links",
+  "info": {
+    "displayName": "AuthorSocialLinks"
+  },
+  "options": {},
+  "attributes": {
+    "socialPlatform": {
+      "type": "string"
+    },
+    "socialPlatformUrl": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

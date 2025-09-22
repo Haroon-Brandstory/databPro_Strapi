@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_service_category_dynamic_open_rates",
+  "info": {
+    "displayName": "dynamicOpenRates"
+  },
+  "options": {},
+  "attributes": {
+    "percentageRate": {
+      "type": "string"
+    },
+    "categorySector": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

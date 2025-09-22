@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_service_category_benefit_emails",
+  "info": {
+    "displayName": "benefitEmail"
+  },
+  "options": {},
+  "attributes": {
+    "sectionTitle": {
+      "type": "string"
+    },
+    "sectionDescription": {
+      "type": "text"
+    },
+    "iconBox": {
+      "type": "component",
+      "component": "service-category.icon-box",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

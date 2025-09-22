@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_service_category_data_verificatoin_items",
+  "info": {
+    "displayName": "dataVerificatoinItems"
+  },
+  "options": {},
+  "attributes": {
+    "verificationTitle": {
+      "type": "string"
+    },
+    "verificationImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

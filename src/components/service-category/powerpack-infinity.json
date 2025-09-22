@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_service_category_powerpack_infinities",
+  "info": {
+    "displayName": "powerpackInfinity"
+  },
+  "options": {},
+  "attributes": {
+    "sectionTitle": {
+      "type": "string"
+    },
+    "infSecContent": {
+      "type": "component",
+      "component": "service-category.infinite-content",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

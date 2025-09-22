@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_service_category_country_details",
+  "info": {
+    "displayName": "countryDetails"
+  },
+  "options": {},
+  "attributes": {
+    "countryName": {
+      "type": "string"
+    },
+    "countryFlag": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "countryCode": {
+      "type": "biginteger"
+    }
+  },
+  "config": {}
+}

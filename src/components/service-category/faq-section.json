@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_service_category_faq_sections",
+  "info": {
+    "displayName": "faqSection"
+  },
+  "options": {},
+  "attributes": {
+    "faq": {
+      "type": "component",
+      "component": "service-category.faq-s",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

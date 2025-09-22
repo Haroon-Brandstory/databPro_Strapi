@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_service_category_exclusive_emails",
+  "info": {
+    "displayName": "exclusiveEmail"
+  },
+  "options": {},
+  "attributes": {
+    "sectionImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "sectionTitle": {
+      "type": "string"
+    },
+    "sectionPara": {
+      "type": "text"
+    },
+    "button": {
+      "type": "component",
+      "component": "service-category.button",
+      "repeatable": false
+    },
+    "features": {
+      "type": "json"
+    }
+  },
+  "config": {}
+}

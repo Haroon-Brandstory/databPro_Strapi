@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_service_category_roi_components",
+  "info": {
+    "displayName": "roiComponents"
+  },
+  "options": {},
+  "attributes": {
+    "componentTitle": {
+      "type": "string"
+    },
+    "componentIcon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

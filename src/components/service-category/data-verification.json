@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_service_category_data_verifications",
+  "info": {
+    "displayName": "dataVerification"
+  },
+  "options": {},
+  "attributes": {
+    "dataVerificationItem": {
+      "type": "component",
+      "component": "service-category.data-verificatoin-items",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

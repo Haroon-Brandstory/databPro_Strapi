@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_blog_blog_contents",
+  "info": {
+    "displayName": "blogContent"
+  },
+  "options": {},
+  "attributes": {
+    "blogContents": {
+      "type": "blocks"
+    },
+    "blogImageContent": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "blogTableContent": {
+      "type": "richtext"
+    }
+  },
+  "config": {}
+}

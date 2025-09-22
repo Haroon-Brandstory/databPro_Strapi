@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_blog_blog_table_of_contents",
+  "info": {
+    "displayName": "blogTableOfContent"
+  },
+  "options": {},
+  "attributes": {
+    "sectionTitle": {
+      "type": "string"
+    },
+    "anchorLink": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

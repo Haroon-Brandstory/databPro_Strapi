@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_service_category_roi_sections",
+  "info": {
+    "displayName": "roiSection"
+  },
+  "options": {},
+  "attributes": {
+    "sectionTitle": {
+      "type": "string"
+    },
+    "sectionDescription": {
+      "type": "text"
+    },
+    "roiComponents": {
+      "type": "component",
+      "component": "service-category.roi-components",
+      "repeatable": true
+    },
+    "button": {
+      "type": "component",
+      "component": "service-category.button",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_service_category_email_format_sections",
+  "info": {
+    "displayName": "emailFormatSection"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "sectionDescription": {
+      "type": "text"
+    },
+    "sectionimage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "button": {
+      "type": "component",
+      "component": "service-category.button",
+      "repeatable": false
+    },
+    "linkButton": {
+      "type": "component",
+      "component": "service-category.button",
+      "repeatable": false
+    },
+    "sectionPara": {
+      "type": "text"
+    },
+    "emailFormats": {
+      "type": "component",
+      "component": "service-category.email-formats-to-note",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

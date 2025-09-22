@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_service_category_industries",
+  "info": {
+    "displayName": "industries"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "industryName": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

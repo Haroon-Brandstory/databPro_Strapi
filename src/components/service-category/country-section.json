@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_service_category_country_sections",
+  "info": {
+    "displayName": "countrySection"
+  },
+  "options": {},
+  "attributes": {
+    "sectionTitle": {
+      "type": "string"
+    },
+    "countryDetails": {
+      "type": "component",
+      "component": "service-category.country-details",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

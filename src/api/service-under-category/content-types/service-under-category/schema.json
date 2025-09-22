@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "service_under_categories",
+  "info": {
+    "singularName": "service-under-category",
+    "pluralName": "service-under-categories",
+    "displayName": "Service under category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "components": {
+      "type": "dynamiczone",
+      "components": [
+        "service-category.video-section",
+        "service-category.roi-section",
+        "service-category.roi-components",
+        "service-category.powerpack-infinity",
+        "service-category.power-packed-section",
+        "service-category.instant-access",
+        "service-category.infinite-content",
+        "service-category.industries",
+        "service-category.industries-covered",
+        "service-category.icon-box",
+        "service-category.faq-section",
+        "service-category.faq-s",
+        "service-category.exclusive-email",
+        "service-category.email-open-rates",
+        "service-category.email-formats-to-note",
+        "service-category.email-format-section",
+        "service-category.dynamic-open-rates",
+        "service-category.data-verificatoin-items",
+        "service-category.data-verification",
+        "service-category.country-section",
+        "service-category.country-details",
+        "service-category.client-form",
+        "service-category.category-banner",
+        "service-category.button",
+        "service-category.business-expansion",
+        "service-category.benefit-email"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "service_categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::service-category.service-category",
+      "mappedBy": "service_under_category"
+    }
+  }
+}

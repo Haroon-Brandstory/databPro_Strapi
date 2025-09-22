@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_service_category_email_open_rates",
+  "info": {
+    "displayName": "emailOpenRates"
+  },
+  "options": {},
+  "attributes": {
+    "sectionTitle": {
+      "type": "string"
+    },
+    "openRates": {
+      "type": "component",
+      "component": "service-category.dynamic-open-rates",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

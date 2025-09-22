@@ -1,0 +1,53 @@
+{
+  "collectionName": "components_service_category_category_banners",
+  "info": {
+    "displayName": "category-banner"
+  },
+  "options": {},
+  "attributes": {
+    "bannerTitle": {
+      "type": "string"
+    },
+    "bannerDescription": {
+      "type": "text"
+    },
+    "button": {
+      "type": "component",
+      "component": "service-category.button",
+      "repeatable": true
+    },
+    "currentCountryImg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "currentCountry": {
+      "type": "string"
+    },
+    "currentCountryCount": {
+      "type": "biginteger"
+    },
+    "worldWide": {
+      "type": "string"
+    },
+    "worldWideCount": {
+      "type": "text"
+    },
+    "worldWideImg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

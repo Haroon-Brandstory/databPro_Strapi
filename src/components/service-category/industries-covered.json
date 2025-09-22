@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_service_category_industries_covereds",
+  "info": {
+    "displayName": "industries-covered"
+  },
+  "options": {},
+  "attributes": {
+    "sectionTitle": {
+      "type": "string"
+    },
+    "sectionDescription": {
+      "type": "text"
+    },
+    "industriesCovered": {
+      "type": "component",
+      "component": "service-category.industries",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

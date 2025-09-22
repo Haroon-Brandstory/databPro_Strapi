@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_service_category_email_formats_to_notes",
+  "info": {
+    "displayName": "emailFormatsToNote"
+  },
+  "options": {},
+  "attributes": {
+    "Format": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

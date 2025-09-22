@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_service_category_infinite_contents",
+  "info": {
+    "displayName": "infiniteContent"
+  },
+  "options": {},
+  "attributes": {
+    "fieldName": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

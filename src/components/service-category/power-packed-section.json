@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_service_category_power_packed_sections",
+  "info": {
+    "displayName": "power-packed-section"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "containerText": {
+      "type": "text"
+    },
+    "Lottie": {
+      "type": "json"
+    },
+    "VideoAKALottie": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "powerButton": {
+      "type": "component",
+      "component": "service-category.button",
+      "repeatable": false
+    },
+    "descriptionParaText": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "service_categories",
+  "info": {
+    "singularName": "service-category",
+    "pluralName": "service-categories",
+    "displayName": "Service Category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "service-category.power-packed-section",
+        "service-category.category-banner",
+        "service-category.powerpack-infinity",
+        "service-category.video-section",
+        "service-category.country-section",
+        "service-category.industries-covered",
+        "service-category.email-format-section",
+        "service-category.data-verification",
+        "service-category.instant-access",
+        "service-category.roi-section",
+        "service-category.business-expansion",
+        "service-category.exclusive-email",
+        "service-category.faq-section",
+        "service-category.benefit-email",
+        "service-category.client-form",
+        "service-category.email-open-rates"
+      ]
+    },
+    "Name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Name"
+    },
+    "service_under_category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::service-under-category.service-under-category",
+      "inversedBy": "service_categories"
+    }
+  }
+}

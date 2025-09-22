@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_service_category_video_sections",
+  "info": {
+    "displayName": "videoSection"
+  },
+  "options": {},
+  "attributes": {
+    "videoUrl": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

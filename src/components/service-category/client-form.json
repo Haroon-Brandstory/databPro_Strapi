@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_service_category_client_forms",
+  "info": {
+    "displayName": "clientForm"
+  },
+  "options": {},
+  "attributes": {
+    "clientForm": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

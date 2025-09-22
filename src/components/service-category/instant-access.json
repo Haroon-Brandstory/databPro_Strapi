@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_service_category_instant_accesses",
+  "info": {
+    "displayName": "instantAccess"
+  },
+  "options": {},
+  "attributes": {
+    "sectionTitle": {
+      "type": "string"
+    },
+    "sectionDescription": {
+      "type": "text"
+    },
+    "button": {
+      "type": "component",
+      "component": "service-category.button",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

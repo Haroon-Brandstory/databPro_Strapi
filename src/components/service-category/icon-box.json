@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_service_category_icon_boxes",
+  "info": {
+    "displayName": "iconBox"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "cardTitle": {
+      "type": "string"
+    },
+    "cardDescription": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

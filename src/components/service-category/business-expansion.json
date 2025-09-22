@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_service_category_business_expansions",
+  "info": {
+    "displayName": "businessExpansion"
+  },
+  "options": {},
+  "attributes": {
+    "sectionTitle": {
+      "type": "string"
+    },
+    "sectionImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "sectionPara": {
+      "type": "blocks"
+    },
+    "sectionCta": {
+      "type": "component",
+      "component": "service-category.button",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}
