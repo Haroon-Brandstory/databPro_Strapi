@@ -38,12 +38,6 @@
     "slug": {
       "type": "uid",
       "targetField": "Name"
-    },
-    "service_under_category": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::service-under-category.service-under-category",
-      "inversedBy": "service_categories"
     }
   }
 }

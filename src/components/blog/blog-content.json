@@ -20,6 +20,9 @@
     },
     "blogTableContent": {
       "type": "richtext"
+    },
+    "newTestContent": {
+      "type": "richtext"
     }
   },
   "config": {}

@@ -28,6 +28,9 @@
     },
     "features": {
       "type": "json"
+    },
+    "sectionHyper": {
+      "type": "blocks"
     }
   },
   "config": {}

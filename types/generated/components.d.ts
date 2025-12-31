@@ -23,6 +23,7 @@ export interface BlogBlogContent extends Struct.ComponentSchema {
       true
     >;
     blogTableContent: Schema.Attribute.RichText;
+    newTestContent: Schema.Attribute.RichText;
   };
 }
 
@@ -231,6 +232,7 @@ export interface ServiceCategoryExclusiveEmail extends Struct.ComponentSchema {
   attributes: {
     button: Schema.Attribute.Component<'service-category.button', false>;
     features: Schema.Attribute.JSON;
+    sectionHyper: Schema.Attribute.Blocks;
     sectionImage: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
@@ -306,6 +308,7 @@ export interface ServiceCategoryInfiniteContent extends Struct.ComponentSchema {
   };
   attributes: {
     fieldName: Schema.Attribute.String;
+    fieldUrl: Schema.Attribute.String;
   };
 }
 
@@ -379,6 +382,7 @@ export interface ServiceCategoryRoiSection extends Struct.ComponentSchema {
       true
     >;
     sectionDescription: Schema.Attribute.Text;
+    sectionLinkDescription: Schema.Attribute.Blocks;
     sectionTitle: Schema.Attribute.String;
   };
 }

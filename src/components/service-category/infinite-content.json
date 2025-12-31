@@ -7,6 +7,9 @@
   "attributes": {
     "fieldName": {
       "type": "string"
+    },
+    "fieldUrl": {
+      "type": "string"
     }
   },
   "config": {}

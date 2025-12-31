@@ -486,10 +486,6 @@ export interface ApiServiceCategoryServiceCategory
         'service-category.email-open-rates',
       ]
     >;
-    service_under_category: Schema.Attribute.Relation<
-      'manyToOne',
-      'api::service-under-category.service-under-category'
-    >;
     slug: Schema.Attribute.UID<'Name'>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -549,10 +545,6 @@ export interface ApiServiceUnderCategoryServiceUnderCategory
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
-    service_categories: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::service-category.service-category'
-    >;
     slug: Schema.Attribute.UID;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;

@@ -20,6 +20,9 @@
       "type": "component",
       "component": "service-category.button",
       "repeatable": false
+    },
+    "sectionLinkDescription": {
+      "type": "blocks"
     }
   },
   "config": {}

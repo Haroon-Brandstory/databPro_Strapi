@@ -47,12 +47,6 @@
     },
     "slug": {
       "type": "uid"
-    },
-    "service_categories": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::service-category.service-category",
-      "mappedBy": "service_under_category"
     }
   }
 }
