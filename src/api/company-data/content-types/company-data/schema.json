@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "companies_data",
+  "info": {
+    "singularName": "company-data",
+    "pluralName": "companies-data",
+    "displayName": "company data"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "CompanyName": {
+      "type": "string"
+    },
+    "SubIndustry": {
+      "type": "string"
+    },
+    "address": {
+      "type": "component",
+      "component": "industry.address",
+      "repeatable": true
+    },
+    "phone": {
+      "type": "biginteger"
+    },
+    "website": {
+      "type": "string"
+    },
+    "turnover": {
+      "type": "string"
+    },
+    "employees": {
+      "type": "string"
+    },
+    "industries": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::industry.industry"
+    },
+    "entities": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::entity.entity"
+    },
+    "rankings": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ranking.ranking"
+    },
+    "sectors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::sector.sector"
+    }
+  }
+}

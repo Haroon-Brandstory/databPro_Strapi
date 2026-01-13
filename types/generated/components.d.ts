@@ -38,6 +38,51 @@ export interface BlogBlogTableOfContent extends Struct.ComponentSchema {
   };
 }
 
+export interface IndustryAddress extends Struct.ComponentSchema {
+  collectionName: 'components_industry_addresses';
+  info: {
+    displayName: 'address';
+  };
+  attributes: {
+    city: Schema.Attribute.String;
+    country: Schema.Attribute.String;
+    pin: Schema.Attribute.Integer;
+    state: Schema.Attribute.String;
+  };
+}
+
+export interface IndustryIndustry extends Struct.ComponentSchema {
+  collectionName: 'components_industry_industries';
+  info: {
+    displayName: 'Industry';
+  };
+  attributes: {};
+}
+
+export interface IndustryParentIndustry extends Struct.ComponentSchema {
+  collectionName: 'components_industry_parent_industries';
+  info: {
+    displayName: 'ParentIndustry';
+  };
+  attributes: {};
+}
+
+export interface IndustryRank extends Struct.ComponentSchema {
+  collectionName: 'components_industry_ranks';
+  info: {
+    displayName: 'rank';
+  };
+  attributes: {};
+}
+
+export interface IndustryRanking extends Struct.ComponentSchema {
+  collectionName: 'components_industry_rankings';
+  info: {
+    displayName: 'ranking';
+  };
+  attributes: {};
+}
+
 export interface ServiceCategoryBenefitEmail extends Struct.ComponentSchema {
   collectionName: 'components_service_category_benefit_emails';
   info: {
@@ -403,6 +448,11 @@ declare module '@strapi/strapi' {
       'blog.author-social-links': BlogAuthorSocialLinks;
       'blog.blog-content': BlogBlogContent;
       'blog.blog-table-of-content': BlogBlogTableOfContent;
+      'industry.address': IndustryAddress;
+      'industry.industry': IndustryIndustry;
+      'industry.parent-industry': IndustryParentIndustry;
+      'industry.rank': IndustryRank;
+      'industry.ranking': IndustryRanking;
       'service-category.benefit-email': ServiceCategoryBenefitEmail;
       'service-category.business-expansion': ServiceCategoryBusinessExpansion;
       'service-category.button': ServiceCategoryButton;

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_industry_addresses",
+  "info": {
+    "displayName": "address"
+  },
+  "options": {},
+  "attributes": {
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "pin": {
+      "type": "integer"
+    }
+  },
+  "config": {}
+}
