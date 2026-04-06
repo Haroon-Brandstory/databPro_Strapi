@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_blog_blog_ctas",
+  "info": {
+    "displayName": "blogCta"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "buttonLabel": {
+      "type": "string"
+    },
+    "buttonUrl": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

@@ -7,9 +7,6 @@
   "attributes": {
     "sectionTitle": {
       "type": "string"
-    },
-    "anchorLink": {
-      "type": "string"
     }
   },
   "config": {}

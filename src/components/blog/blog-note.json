@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_blog_blog_notes",
+  "info": {
+    "displayName": "blogNote"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "note": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_blog_headers",
+  "info": {
+    "displayName": "header"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

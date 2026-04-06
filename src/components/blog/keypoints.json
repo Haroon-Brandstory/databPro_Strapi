@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_blog_keypoints",
+  "info": {
+    "displayName": "keypoints"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "points": {
+      "type": "component",
+      "component": "blog.points",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

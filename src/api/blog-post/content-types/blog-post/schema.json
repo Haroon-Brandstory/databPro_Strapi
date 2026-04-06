@@ -17,6 +17,11 @@
     "BlogSlug": {
       "type": "uid"
     },
+    "author": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::author.author"
+    },
     "BlogPreviewImage": {
       "type": "media",
       "multiple": false,
@@ -32,15 +37,20 @@
       "component": "blog.blog-table-of-content",
       "repeatable": true
     },
-    "blogContents": {
-      "type": "component",
-      "component": "blog.blog-content",
-      "repeatable": true
-    },
-    "author": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::author.author"
+    "blogSections": {
+      "type": "dynamiczone",
+      "components": [
+        "blog.blog-content",
+        "blog.table",
+        "blog.blog-image",
+        "blog.blog-quote",
+        "blog.keypoints",
+        "blog.blog-note",
+        "blog.blog-cta",
+        "blog.blog-pdf",
+        "blog.blog-faq",
+        "blog.article-analyzer"
+      ]
     }
   }
 }

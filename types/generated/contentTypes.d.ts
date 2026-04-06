@@ -417,10 +417,23 @@ export interface ApiBlogPostBlogPost extends Struct.CollectionTypeSchema {
   };
   attributes: {
     author: Schema.Attribute.Relation<'oneToOne', 'api::author.author'>;
-    blogContents: Schema.Attribute.Component<'blog.blog-content', true>;
     BlogName: Schema.Attribute.String;
     BlogPreviewImage: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
+    >;
+    blogSections: Schema.Attribute.DynamicZone<
+      [
+        'blog.blog-content',
+        'blog.table',
+        'blog.blog-image',
+        'blog.blog-quote',
+        'blog.keypoints',
+        'blog.blog-note',
+        'blog.blog-cta',
+        'blog.blog-pdf',
+        'blog.blog-faq',
+        'blog.article-analyzer',
+      ]
     >;
     BlogSlug: Schema.Attribute.UID;
     BlogTableOfContents: Schema.Attribute.Component<

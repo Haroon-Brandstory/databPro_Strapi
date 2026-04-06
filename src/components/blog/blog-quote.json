@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_blog_blog_quotes",
+  "info": {
+    "displayName": "blogQuote"
+  },
+  "options": {},
+  "attributes": {
+    "quote": {
+      "type": "text"
+    },
+    "blogAuthor": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

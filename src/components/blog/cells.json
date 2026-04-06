@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_blog_cells",
+  "info": {
+    "displayName": "cells"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_blog_blog_faqs",
+  "info": {
+    "displayName": "blogFaq"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "faq": {
+      "type": "component",
+      "component": "blog.faqs",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

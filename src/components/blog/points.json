@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_blog_points",
+  "info": {
+    "displayName": "points"
+  },
+  "options": {},
+  "attributes": {
+    "point": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

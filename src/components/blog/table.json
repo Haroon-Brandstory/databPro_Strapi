@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_blog_tables",
+  "info": {
+    "displayName": "table"
+  },
+  "options": {},
+  "attributes": {
+    "tableHeading": {
+      "type": "component",
+      "component": "blog.header",
+      "repeatable": true
+    },
+    "tableRows": {
+      "type": "component",
+      "component": "blog.table-row",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

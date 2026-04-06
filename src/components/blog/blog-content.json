@@ -7,22 +7,6 @@
   "attributes": {
     "blogContents": {
       "type": "blocks"
-    },
-    "blogImageContent": {
-      "type": "media",
-      "multiple": true,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
-    "blogTableContent": {
-      "type": "richtext"
-    },
-    "newTestContent": {
-      "type": "richtext"
     }
   },
   "config": {}

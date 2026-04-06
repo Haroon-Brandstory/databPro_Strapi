@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_blog_table_rows",
+  "info": {
+    "displayName": "tableRow"
+  },
+  "options": {},
+  "attributes": {
+    "cells": {
+      "type": "component",
+      "component": "blog.cells",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

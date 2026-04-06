@@ -1,5 +1,19 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface BlogArticleAnalyzer extends Struct.ComponentSchema {
+  collectionName: 'components_blog_article_analyzers';
+  info: {
+    displayName: 'articleAnalyzer';
+  };
+  attributes: {
+    chatGPT: Schema.Attribute.String;
+    claude: Schema.Attribute.String;
+    copilot: Schema.Attribute.String;
+    gemini: Schema.Attribute.String;
+    perplexity: Schema.Attribute.String;
+  };
+}
+
 export interface BlogAuthorSocialLinks extends Struct.ComponentSchema {
   collectionName: 'components_blog_author_social_links';
   info: {
@@ -18,12 +32,74 @@ export interface BlogBlogContent extends Struct.ComponentSchema {
   };
   attributes: {
     blogContents: Schema.Attribute.Blocks;
-    blogImageContent: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios',
-      true
-    >;
-    blogTableContent: Schema.Attribute.RichText;
-    newTestContent: Schema.Attribute.RichText;
+  };
+}
+
+export interface BlogBlogCta extends Struct.ComponentSchema {
+  collectionName: 'components_blog_blog_ctas';
+  info: {
+    displayName: 'blogCta';
+  };
+  attributes: {
+    buttonLabel: Schema.Attribute.String;
+    buttonUrl: Schema.Attribute.String;
+    description: Schema.Attribute.Blocks;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface BlogBlogFaq extends Struct.ComponentSchema {
+  collectionName: 'components_blog_blog_faqs';
+  info: {
+    displayName: 'blogFaq';
+  };
+  attributes: {
+    faq: Schema.Attribute.Component<'blog.faqs', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface BlogBlogImage extends Struct.ComponentSchema {
+  collectionName: 'components_blog_blog_images';
+  info: {
+    displayName: 'blogImage';
+  };
+  attributes: {
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
+export interface BlogBlogNote extends Struct.ComponentSchema {
+  collectionName: 'components_blog_blog_notes';
+  info: {
+    displayName: 'blogNote';
+  };
+  attributes: {
+    note: Schema.Attribute.Text;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface BlogBlogPdf extends Struct.ComponentSchema {
+  collectionName: 'components_blog_blog_pdfs';
+  info: {
+    displayName: 'blogPdf';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks;
+    pdf: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface BlogBlogQuote extends Struct.ComponentSchema {
+  collectionName: 'components_blog_blog_quotes';
+  info: {
+    displayName: 'blogQuote';
+  };
+  attributes: {
+    blogAuthor: Schema.Attribute.String;
+    quote: Schema.Attribute.Text;
   };
 }
 
@@ -33,8 +109,80 @@ export interface BlogBlogTableOfContent extends Struct.ComponentSchema {
     displayName: 'blogTableOfContent';
   };
   attributes: {
-    anchorLink: Schema.Attribute.String;
     sectionTitle: Schema.Attribute.String;
+  };
+}
+
+export interface BlogCells extends Struct.ComponentSchema {
+  collectionName: 'components_blog_cells';
+  info: {
+    displayName: 'cells';
+  };
+  attributes: {
+    content: Schema.Attribute.Blocks;
+  };
+}
+
+export interface BlogFaqs extends Struct.ComponentSchema {
+  collectionName: 'components_blog_faqs';
+  info: {
+    displayName: 'faqs';
+  };
+  attributes: {
+    answer: Schema.Attribute.Blocks;
+    question: Schema.Attribute.String;
+  };
+}
+
+export interface BlogHeader extends Struct.ComponentSchema {
+  collectionName: 'components_blog_headers';
+  info: {
+    displayName: 'header';
+  };
+  attributes: {
+    heading: Schema.Attribute.String;
+  };
+}
+
+export interface BlogKeypoints extends Struct.ComponentSchema {
+  collectionName: 'components_blog_keypoints';
+  info: {
+    displayName: 'keypoints';
+  };
+  attributes: {
+    points: Schema.Attribute.Component<'blog.points', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface BlogPoints extends Struct.ComponentSchema {
+  collectionName: 'components_blog_points';
+  info: {
+    displayName: 'points';
+  };
+  attributes: {
+    point: Schema.Attribute.String;
+  };
+}
+
+export interface BlogTable extends Struct.ComponentSchema {
+  collectionName: 'components_blog_tables';
+  info: {
+    displayName: 'table';
+  };
+  attributes: {
+    tableHeading: Schema.Attribute.Component<'blog.header', true>;
+    tableRows: Schema.Attribute.Component<'blog.table-row', true>;
+  };
+}
+
+export interface BlogTableRow extends Struct.ComponentSchema {
+  collectionName: 'components_blog_table_rows';
+  info: {
+    displayName: 'tableRow';
+  };
+  attributes: {
+    cells: Schema.Attribute.Component<'blog.cells', true>;
   };
 }
 
@@ -445,9 +593,23 @@ export interface ServiceCategoryVideoSection extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'blog.article-analyzer': BlogArticleAnalyzer;
       'blog.author-social-links': BlogAuthorSocialLinks;
       'blog.blog-content': BlogBlogContent;
+      'blog.blog-cta': BlogBlogCta;
+      'blog.blog-faq': BlogBlogFaq;
+      'blog.blog-image': BlogBlogImage;
+      'blog.blog-note': BlogBlogNote;
+      'blog.blog-pdf': BlogBlogPdf;
+      'blog.blog-quote': BlogBlogQuote;
       'blog.blog-table-of-content': BlogBlogTableOfContent;
+      'blog.cells': BlogCells;
+      'blog.faqs': BlogFaqs;
+      'blog.header': BlogHeader;
+      'blog.keypoints': BlogKeypoints;
+      'blog.points': BlogPoints;
+      'blog.table': BlogTable;
+      'blog.table-row': BlogTableRow;
       'industry.address': IndustryAddress;
       'industry.industry': IndustryIndustry;
       'industry.parent-industry': IndustryParentIndustry;

@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_blog_article_analyzers",
+  "info": {
+    "displayName": "articleAnalyzer"
+  },
+  "options": {},
+  "attributes": {
+    "gemini": {
+      "type": "string"
+    },
+    "chatGPT": {
+      "type": "string"
+    },
+    "claude": {
+      "type": "string"
+    },
+    "copilot": {
+      "type": "string"
+    },
+    "perplexity": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
