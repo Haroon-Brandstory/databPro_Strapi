@@ -51,6 +51,15 @@
         "blog.blog-faq",
         "blog.article-analyzer"
       ]
+    },
+    "metaTitle": {
+      "type": "string"
+    },
+    "metaDescription": {
+      "type": "string"
+    },
+    "keywords": {
+      "type": "text"
     }
   }
 }
