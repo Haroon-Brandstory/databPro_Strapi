@@ -6,19 +6,19 @@
   "options": {},
   "attributes": {
     "gemini": {
-      "type": "string"
+      "type": "text"
     },
     "chatGPT": {
-      "type": "string"
+      "type": "text"
     },
     "claude": {
-      "type": "string"
+      "type": "text"
     },
     "copilot": {
-      "type": "string"
+      "type": "text"
     },
     "perplexity": {
-      "type": "string"
+      "type": "text"
     }
   },
   "config": {}

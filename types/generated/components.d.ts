@@ -6,11 +6,11 @@ export interface BlogArticleAnalyzer extends Struct.ComponentSchema {
     displayName: 'articleAnalyzer';
   };
   attributes: {
-    chatGPT: Schema.Attribute.String;
-    claude: Schema.Attribute.String;
-    copilot: Schema.Attribute.String;
-    gemini: Schema.Attribute.String;
-    perplexity: Schema.Attribute.String;
+    chatGPT: Schema.Attribute.Text;
+    claude: Schema.Attribute.Text;
+    copilot: Schema.Attribute.Text;
+    gemini: Schema.Attribute.Text;
+    perplexity: Schema.Attribute.Text;
   };
 }
 
