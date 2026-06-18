@@ -6,7 +6,7 @@
   "options": {},
   "attributes": {
     "point": {
-      "type": "string"
+      "type": "text"
     }
   },
   "config": {}

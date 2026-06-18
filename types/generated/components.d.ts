@@ -161,7 +161,7 @@ export interface BlogPoints extends Struct.ComponentSchema {
     displayName: 'points';
   };
   attributes: {
-    point: Schema.Attribute.String;
+    point: Schema.Attribute.Text;
   };
 }
 
