@@ -1,0 +1,47 @@
+{
+  "name": "strapi-plugin-brandstory-ai",
+  "version": "1.0.0",
+  "description": "Sync Brandstory AI blogs into Strapi content types with media import, draft/publish, and sync logs.",
+  "license": "MIT",
+  "strapi": {
+    "name": "brandstory-ai",
+    "displayName": "Brandstory AI",
+    "description": "Connect Strapi to Brandstory AI CONTENT FACTORY — pull blogs, import media, upsert entries.",
+    "kind": "plugin"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    "./strapi-admin": {
+      "source": "./admin/src/index.ts",
+      "import": "./admin/src/index.ts",
+      "require": "./admin/src/index.ts",
+      "default": "./admin/src/index.ts"
+    },
+    "./strapi-server": "./strapi-server.js"
+  },
+  "files": [
+    "admin",
+    "server",
+    "strapi-admin.js",
+    "strapi-server.js",
+    "package.json",
+    "README.md",
+    "scripts"
+  ],
+  "scripts": {
+    "test": "node scripts/test-content.mjs"
+  },
+  "peerDependencies": {
+    "@strapi/strapi": "^5.0.0",
+    "@strapi/design-system": "*",
+    "@strapi/icons": "*",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0",
+    "styled-components": "^6.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=22.x.x",
+    "npm": ">=6.0.0"
+  }
+}

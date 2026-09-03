@@ -502,11 +502,12 @@ export interface ApiBlogPostBlogPost extends Struct.CollectionTypeSchema {
         'blog.article-analyzer',
       ]
     >;
-    BlogSlug: Schema.Attribute.UID;
+    BlogSlug: Schema.Attribute.UID<'BlogName'>;
     BlogTableOfContents: Schema.Attribute.Component<
       'blog.blog-table-of-content',
       true
     >;
+    brandstorySyncId: Schema.Attribute.String & Schema.Attribute.Unique;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -783,6 +784,55 @@ export interface ApiServiceUnderCategoryServiceUnderCategory
     publishedAt: Schema.Attribute.DateTime;
     slug: Schema.Attribute.UID;
     title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface PluginBrandstoryAiSyncLog extends Struct.CollectionTypeSchema {
+  collectionName: 'brandstory_sync_logs';
+  info: {
+    description: 'Records of Brandstory AI sync operations';
+    displayName: 'Brandstory Sync Log';
+    pluralName: 'sync-logs';
+    singularName: 'sync-log';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  pluginOptions: {
+    'content-manager': {
+      visible: true;
+    };
+    'content-type-builder': {
+      visible: false;
+    };
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    durationMs: Schema.Attribute.Integer;
+    errors: Schema.Attribute.JSON;
+    failed: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
+    inserted: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'plugin::brandstory-ai.sync-log'
+    > &
+      Schema.Attribute.Private;
+    message: Schema.Attribute.Text;
+    meta: Schema.Attribute.JSON;
+    publishedAt: Schema.Attribute.DateTime;
+    skipped: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
+    source: Schema.Attribute.Enumeration<['manual', 'cron', 'test']> &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'manual'>;
+    status: Schema.Attribute.Enumeration<['success', 'partial', 'error']> &
+      Schema.Attribute.Required;
+    updated: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1309,6 +1359,7 @@ declare module '@strapi/strapi' {
       'api::sector.sector': ApiSectorSector;
       'api::service-category.service-category': ApiServiceCategoryServiceCategory;
       'api::service-under-category.service-under-category': ApiServiceUnderCategoryServiceUnderCategory;
+      'plugin::brandstory-ai.sync-log': PluginBrandstoryAiSyncLog;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

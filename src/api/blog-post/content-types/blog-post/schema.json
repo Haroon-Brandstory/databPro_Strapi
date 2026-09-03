@@ -11,11 +11,17 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "brandstorySyncId": {
+      "type": "string",
+      "unique": true,
+      "required": false
+    },
     "BlogName": {
       "type": "string"
     },
     "BlogSlug": {
-      "type": "uid"
+      "type": "uid",
+      "targetField": "BlogName"
     },
     "author": {
       "type": "relation",

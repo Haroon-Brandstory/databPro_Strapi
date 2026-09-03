@@ -1,0 +1,66 @@
+const schema = {
+  kind: 'collectionType',
+  collectionName: 'brandstory_sync_logs',
+  info: {
+    singularName: 'sync-log',
+    pluralName: 'sync-logs',
+    displayName: 'Brandstory Sync Log',
+    description: 'Records of Brandstory AI sync operations',
+  },
+  options: {
+    draftAndPublish: false,
+  },
+  pluginOptions: {
+    'content-manager': {
+      visible: true,
+    },
+    'content-type-builder': {
+      visible: false,
+    },
+  },
+  attributes: {
+    source: {
+      type: 'enumeration',
+      enum: ['manual', 'cron', 'test'],
+      default: 'manual',
+      required: true,
+    },
+    status: {
+      type: 'enumeration',
+      enum: ['success', 'partial', 'error'],
+      required: true,
+    },
+    message: {
+      type: 'text',
+    },
+    inserted: {
+      type: 'integer',
+      default: 0,
+    },
+    updated: {
+      type: 'integer',
+      default: 0,
+    },
+    skipped: {
+      type: 'integer',
+      default: 0,
+    },
+    failed: {
+      type: 'integer',
+      default: 0,
+    },
+    durationMs: {
+      type: 'integer',
+    },
+    errors: {
+      type: 'json',
+    },
+    meta: {
+      type: 'json',
+    },
+  },
+};
+
+export default {
+  schema,
+};

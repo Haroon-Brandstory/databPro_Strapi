@@ -1,0 +1,9 @@
+{
+  "brandstory-ai": {
+    "plugin.name": "Brandstory AI",
+    "plugin.description": "Sync Brandstory AI content into Strapi",
+    "nav.settings": "Settings",
+    "nav.queue": "Content queue",
+    "nav.logs": "Sync logs"
+  }
+}
